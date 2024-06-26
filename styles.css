@@ -7,7 +7,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 4fr;
-    grid-template-rows: 300px 1fr;
+    grid-template-rows: 200px 1fr;
     background-color: #e2e8f0;
 }
 header{
@@ -18,4 +18,24 @@ header{
 .nav{
     background-color: #1992d4;
     grid-row: 1/3;
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    padding: 1em;
+}
+.projectsContainer{
+    background-color: aquamarine;
+    grid-area: 1/1/3/2;
+}
+.anouncementsContainer{
+    background-color: chocolate;
+}
+.trendingContainer{
+    background-color: chartreuse;
+}
+.card{
+    background-color: #fff;
 }
