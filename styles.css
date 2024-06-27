@@ -157,7 +157,7 @@ button{
 main{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 1em;
     padding: 1em;
 }
@@ -182,6 +182,7 @@ main{
     border-left: 8px solid var(--color-dark);
     display: grid;
     gap: 1em;
+    min-height: 250px;
 }
 .card>.icons{
     align-self: end;
