@@ -3,6 +3,14 @@
     padding: 0px;
     list-style: none;
 }
+:root{
+    --color-light: #e3f171;
+    --color-dark: #35565a;
+    --color-blush: #e8e5e3;
+    --color-blush-tinted: #d9d2ce;
+    --color-grey: #999;
+}
+
 a{
     text-decoration: none;
     color: #fff;
@@ -16,12 +24,40 @@ body{
     background-color: #e2e8f0;
 }
 header{
-    background-color: #fff;
+    padding: 2em;
+    padding-right: 4em;
+    background-color: var(--color-blush);
     grid-column: 2/3;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+.iconDark{
+    height: 32px;
+    width: auto;
+    stroke: var(--color-dark);
+}
+.searchContainer{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+#search{
+    border: 0px solid var(--color-dark);
+    border-radius: 16px;
+    background-color: var(--color-blush-tinted);
+    width: 100%;
+    height: 32px;
+}
+.userInfo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
 }
 .nav{
-    background-color: #1992d4;
+    background-color: var(--color-dark);
     grid-row: 1/3;
     display: grid;
     grid-template-columns: 1fr;
@@ -36,6 +72,11 @@ header{
     color: #fff;
     padding: 1em;
 }
+.dashicon{
+    stroke: var(--color-light);
+    height: 40px;
+    width: auto;
+}
 .logotype{
     font-size: 2em;
     font-weight: bolder;
@@ -44,7 +85,7 @@ header{
 }
 .navUpper, .navLower{
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     padding: 1em;
     display: flex;
@@ -57,6 +98,7 @@ header{
     gap: 1em;
 }
 .listIcon{
+    stroke: var(--color-light);
     height: 32px;
     width: auto;
 }
@@ -68,14 +110,14 @@ main{
     padding: 1em;
 }
 .projectsContainer{
-    background-color: aquamarine;
+    background-color: var(--color-grey);
     grid-area: 1/1/3/2;
 }
 .anouncementsContainer{
-    background-color: chocolate;
+    background-color: var(--color-grey);
 }
 .trendingContainer{
-    background-color: chartreuse;
+    background-color: var(--color-grey);
 }
 .card{
     background-color: #fff;
